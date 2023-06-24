@@ -1,0 +1,27 @@
+{
+  "name": "npm-workspaces-monorepo",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Explore dependency management in npm workspaces.",
+  "private": true,
+  "engines": {
+    "node": ">=18.16.0",
+    "npm": ">=9.7.2"
+  },
+  "workspaces": [
+    "packages/foo",
+    "packages/bar"
+  ],
+  "scripts": {
+    "build:foo": "node build.js foo",
+    "build:bar": "node build.js bar",
+    "clean": "npm run rm --workspaces --include-workspace-root",
+    "prepare:foo": "node prepare.js foo",
+    "prepare:bar": "node prepare.js bar",
+    "rm": "rm -rf ./node_modules"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}

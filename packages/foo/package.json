@@ -1,0 +1,19 @@
+{
+  "name": "foo",
+  "version": "1.0.0",
+  "description": "Foo",
+  "main": "index.js",
+  "scripts": {
+    "rm": "rm -rf ./node_modules"
+  },
+  "keywords": [
+    "foo"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "lodash.debounce": "^3.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}

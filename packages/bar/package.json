@@ -1,0 +1,19 @@
+{
+  "name": "bar",
+  "version": "1.0.0",
+  "description": "Bar",
+  "main": "index.js",
+  "scripts": {
+    "rm": "rm -rf ./node_modules"
+  },
+  "keywords": [
+    "bar"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
